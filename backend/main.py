@@ -116,6 +116,15 @@ app.include_router(overview_router)
 
 
 # ------------------------------------------------------------- endpoints ----
+
+@app.get("/")
+def root():
+    return {
+        "message": "SupplyChain Sentinel API is running",
+        "status": "healthy"
+    }
+
+
 @app.get("/api/health", response_model=HealthResponse)
 def health() -> HealthResponse:
     """Liveness/readiness probe."""
