@@ -98,6 +98,7 @@ _origins = [o.strip() for o in _origins_env.split(",") if o.strip()] or [
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_origins,
+    allow_origin_regex=r"https://.*\.onrender\.com$",
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
