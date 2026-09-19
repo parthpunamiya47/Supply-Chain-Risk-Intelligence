@@ -4,7 +4,7 @@ import axios from 'axios'
 // forwards /api to the FastAPI backend. No fake responses anywhere - if the
 // backend is down, the UI shows the error state honestly.
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
   timeout: 60000,
   headers: { 'Content-Type': 'application/json' },
 })
