@@ -1,0 +1,49 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 400,
+  "class_weight": "balanced",
+  "random_state": 42,
+  "n_rows_total": 2512,
+  "n_train": 2009,
+  "n_test": 503,
+  "features": [
+    "supplier_reliability",
+    "previous_delays",
+    "average_lead_time",
+    "demand",
+    "inventory_level",
+    "weather_risk",
+    "transportation_risk",
+    "distance",
+    "supplier_capacity",
+    "shipment_size",
+    "historical_disruptions"
+  ],
+  "target": "disrupted",
+  "disruption_rate_train": 0.2628,
+  "disruption_rate_test": 0.2624,
+  "test_metrics": {
+    "precision": 0.5248,
+    "recall": 0.5606,
+    "f1": 0.5421,
+    "macro_f1": 0.6858,
+    "roc_auc": 0.7754,
+    "confusion_matrix": [
+      [
+        304,
+        67
+      ],
+      [
+        58,
+        74
+      ]
+    ],
+    "n_test": 503,
+    "positive_rate_test": 0.2624
+  },
+  "artifacts": {
+    "model": "random_forest_pipeline.joblib",
+    "feature_importances": "feature_importances.json",
+    "metadata": "training_metadata.json"
+  }
+}

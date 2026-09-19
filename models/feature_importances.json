@@ -1,0 +1,57 @@
+[
+  {
+    "feature": "transportation_risk",
+    "importance_mean": 0.06343,
+    "importance_std": 0.01083
+  },
+  {
+    "feature": "previous_delays",
+    "importance_mean": 0.03913,
+    "importance_std": 0.01523
+  },
+  {
+    "feature": "historical_disruptions",
+    "importance_mean": 0.03783,
+    "importance_std": 0.0089
+  },
+  {
+    "feature": "weather_risk",
+    "importance_mean": 0.03306,
+    "importance_std": 0.00719
+  },
+  {
+    "feature": "supplier_reliability",
+    "importance_mean": 0.02602,
+    "importance_std": 0.00871
+  },
+  {
+    "feature": "inventory_level",
+    "importance_mean": 0.01019,
+    "importance_std": 0.0086
+  },
+  {
+    "feature": "average_lead_time",
+    "importance_mean": 0.00249,
+    "importance_std": 0.0071
+  },
+  {
+    "feature": "shipment_size",
+    "importance_mean": 0.00134,
+    "importance_std": 0.00437
+  },
+  {
+    "feature": "supplier_capacity",
+    "importance_mean": 0.00129,
+    "importance_std": 0.00241
+  },
+  {
+    "feature": "demand",
+    "importance_mean": 0.00047,
+    "importance_std": 0.00289
+  },
+  {
+    "feature": "distance",
+    "importance_mean": 0.0003,
+    "importance_std": 0.00448
+  }
+]

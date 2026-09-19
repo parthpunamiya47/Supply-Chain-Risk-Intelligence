@@ -1,0 +1,37 @@
+=== SupplyChain Sentinel - Model Evaluation (held-out test set) ===
+Test rows: 503   |   disruption rate: 26.2%
+
+Precision (disrupted=1): 0.5248
+Recall    (disrupted=1): 0.5606
+F1        (disrupted=1): 0.5421
+Macro F1:                0.6858
+ROC-AUC:                 0.7754
+
+Confusion matrix (rows=actual, cols=predicted):
+            pred 0    pred 1
+actual 0  |     304 |      67
+actual 1  |      58 |      74
+
+NOTE: disruption events are relatively rare, so precision/recall/F1
+and ROC-AUC are the meaningful metrics here - accuracy alone would be
+misleading (a model that always predicts 0 scores well on accuracy).
+Metrics are on SYNTHETIC data with baked-in relationships; they are not
+claims about real-world performance.
+
+Threshold trade-offs:
+  thr | precision |    recall |      F1
+ 0.20 |     0.332 |     0.932 |   0.490
+ 0.25 |     0.360 |     0.902 |   0.514
+ 0.30 |     0.397 |     0.848 |   0.541
+ 0.35 |     0.429 |     0.773 |   0.551
+ 0.40 |     0.434 |     0.674 |   0.528
+ 0.45 |     0.482 |     0.621 |   0.543
+ 0.50 |     0.525 |     0.561 |   0.542
+ 0.55 |     0.590 |     0.470 |   0.523
+ 0.60 |     0.662 |     0.386 |   0.488
+ 0.65 |     0.672 |     0.295 |   0.411
+ 0.70 |     0.659 |     0.220 |   0.330
+ 0.75 |     0.667 |     0.152 |   0.247
+ 0.80 |     0.667 |     0.091 |   0.160
+
+Best F1 threshold in scan: 0.35 (F1=0.551)

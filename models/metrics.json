@@ -1,0 +1,19 @@
+{
+  "precision": 0.5248,
+  "recall": 0.5606,
+  "f1": 0.5421,
+  "macro_f1": 0.6858,
+  "roc_auc": 0.7754,
+  "confusion_matrix": [
+    [
+      304,
+      67
+    ],
+    [
+      58,
+      74
+    ]
+  ],
+  "n_test": 503,
+  "positive_rate_test": 0.2624
+}
